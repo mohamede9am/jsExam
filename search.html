@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+        <header style="position: relative;">
+            <div class="allNavs d-flex position-fixed ">
+            <div class=" nav navTwo bg-dark">
+                <div class="container text-white side-nav-menu d-flex flex-column justify-content-between mt-4 min-vh-100">
+                <ul class="main-menu animate__animated animate__bounceInUp">
+                <li href="#search"><a href="">Search</a> </li>
+                <li href="index.html#cat" id="categoryli"><a href="index.html#cat">Categories</a></li>
+                <li href="#area" id="areali"><a href="index.html#area">Area</a></li>
+                <li href="" id="ingrli"><a href="#ingr">Ingredients</a></li>
+                <li href="#cont" id="contact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="copywrite mb-5 p-2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright © 2019 All Rights
+                    Reserved.</p>
+                </div>
+            </div>
+            </div>
+            <nav>
+                <div class="container d-flex flex-column justify-content-between align-items-center min-vh-100">
+                <div class="logo">
+                    <a href="index.html"><img src="./logo.png" class="w-100 mt-2" alt=""></a>
+                </div>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars fa-2xl" id="menu-btn"></i>
+                </div>
+                <div class="so-icons mb-3">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+        
+                </div>
+            </nav>
+            </div>
+    </header>
+
+    <section id="search" class="d-flex flex-row-reverse">
+        <div class="row w-100 gy-5 row-width" id="rowData">
+            <div class="col-md-6">
+                <input id="searchInput" onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+                <button class="btn btn-danger text-center my-2" onclick="displaySearch(this.value)">Search</button>
+            </div>
+            <div class="col-md-6">
+                <input onkeyup="searchByFirstLetter(this.value)" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+                <button class="btn btn-danger text-center my-2" onclick="displaySearch(a)">Search</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="home" class="d-flex flex-row-reverse me-4">
+        <div class="searchrow row w-100  gy-5 row-width">
+        </div>
+    </section>
+
+
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

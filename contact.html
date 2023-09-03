@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black">
+        <header style="position: relative;">
+            <div class="allNavs d-flex position-fixed ">
+            <div class=" nav navTwo bg-dark">
+                <div class="container text-white side-nav-menu d-flex flex-column justify-content-between mt-4 min-vh-100">
+                <ul class="main-menu animate__animated animate__bounceInUp">
+                <li href="#search"><a href="search.html">Search</a> </li>
+                <li href="index.html#cat" id="categoryli"><a href="#cat">Categories</a></li>
+                <li href="#area" id="areali"><a href="#area">Area</a></li>
+                <li href="" id="ingrli"><a href="#ingr">Ingredients</a></li>
+                <li href="#cont" id="contact"><a href="">Contact Us</a></li>
+                </ul>
+                <div class="copywrite mb-5 p-2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright © 2019 All Rights
+                    Reserved.</p>
+                </div>
+            </div>
+            </div>
+            <nav>
+                <div class="container d-flex flex-column justify-content-between align-items-center min-vh-100">
+                <div class="logo">
+                    <a href="index.html"><img src="./logo.png" class="w-100 mt-2" alt=""></a>
+                </div>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars fa-2xl" id="menu-btn"></i>
+                </div>
+                <div class="so-icons mb-3">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+        
+                </div>
+            </nav>
+            </div>
+    </header>
+
+    <secation id="contact" class="d-flex flex-row-reverse">
+        <div class="row row w-100  gy-5 row-width " id="rowData">
+          <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+          <div class="container w-75 text-center">
+              <div class="row g-4">
+                  <div class="col-md-6">
+                      <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+                      <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                          Special characters and numbers not allowed
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <input id="emailInput" type="email" class="form-control " placeholder="Enter Your Email">
+                      <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                          Email not valid *exemple@yyy.zzz
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <input id="phoneInput" type="text" class="form-control " placeholder="Enter Your Phone">
+                      <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                          Enter valid Phone Number
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <input id="ageInput" type="number" class="form-control " placeholder="Enter Your Age">
+                      <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                          Enter valid age
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <input id="passwordInput" type="password" class="form-control " placeholder="Enter Your Password">
+                      <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                          Enter valid password *Minimum eight characters, at least one letter and one number:*
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <input id="repasswordInput" type="password" class="form-control " placeholder="Repassword">
+                      <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                          Enter valid repassword 
+                      </div>
+                  </div>
+              </div>
+              <button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+          </div>
+          </div> </div>
+    </secation>
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
